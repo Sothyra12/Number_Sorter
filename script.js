@@ -46,7 +46,7 @@ const bubbleSort = (array) => {
 // Selection sort works by repeatedly selecting the smallest element from the unsorted portion of the array and placing it at the beginning of the unsorted portion of the array
 const selectionSort = (array) => {
   for (let i = 0; i < array.length; i++) {
-    // ensures if the current element is the smallest element, it will be swapped with the itself not be moved
+    // ensures if the current element is the smallest element, it will be swapped with itself and not be moved
     const minIndex = i;
     for (let j = i + 1; j < array.length; j++) {
       console.log(array, array[j], array[minIndex]);
