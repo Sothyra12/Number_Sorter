@@ -54,6 +54,10 @@ const selectionSort = (array) => {
         minIndex = j;
       }
     }
+
+    const temp = array[i];
+    array[i] = array[minIndex];
+    array[minIndex] = temp;
   }
 };
 
