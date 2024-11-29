@@ -49,7 +49,7 @@ const selectionSort = (array) => {
     // ensures if the current element is the smallest element, it will be swapped with itself and not be moved
     const minIndex = i;
     for (let j = i + 1; j < array.length; j++) {
-      console.log(array, array[j], array[minIndex]);
+      //console.log(array, array[j], array[minIndex]); for debugging
       if (array[j] < array[minIndex]) {
         minIndex = j;
       }
@@ -59,6 +59,7 @@ const selectionSort = (array) => {
     array[i] = array[minIndex];
     array[minIndex] = temp;
   }
+  return array;
 };
 
 sortButton.addEventListener("click", sortInputArray);
